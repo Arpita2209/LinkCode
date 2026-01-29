@@ -2,7 +2,10 @@
 int main(){
     int ch,Balance=10000,accno[10],amount,time,loan_amount;
     char Name[10];
+    float loan_rate = 8;
+    float loan_interest;
 
+    do{
     printf("-------------------choice----------------\n");
     printf("1.Deposit\n2.withdraw\n3.fixed\n4.loan\n5.check availaible balance\n");
 
@@ -73,7 +76,7 @@ int main(){
                 printf("Enter time (in years): ");
                 scanf("%d", &time);
 
-                float loan_rate = 8;
+                // float loan_rate = 8;
                 float loan_interest = (loan_amount * loan_rate * time) / 100;
 
                 printf("Loan Interest: %.2f\n", loan_interest);
@@ -90,5 +93,7 @@ int main(){
          }
 
     }
-
+    
+    }while(ch!=6);
+    return 0;
 }

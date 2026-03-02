@@ -43,7 +43,7 @@ int main(){
     case 2:
         printf("enter base height:");
         scanf("%f%f",&base,&height);
-        trianglearea(float base,float height);
+        trianglearea( base, height);
 
         break;
     }
